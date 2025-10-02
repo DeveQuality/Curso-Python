@@ -1,6 +1,6 @@
 velocidade = int(input('Qual a sua velocidade: '))
 
-multa = 7*velocidade
+multa = (velocidade-80)*7
 
 if velocidade >= 80:
     print('sua velocidade esta em {}km/h , recebeu a uma multa de {}mzn'.format(velocidade,multa))

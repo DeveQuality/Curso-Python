@@ -5,4 +5,4 @@ if nome == 'Bernardo' :
 else :
     print('ola {} como esta? ' .format(nome))
 
-print('Seja Bem-vindo ao futuro...')
+print('Seja Bem-vindo ao futuro...') 

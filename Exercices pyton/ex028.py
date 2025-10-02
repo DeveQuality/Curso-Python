@@ -1,6 +1,7 @@
 import random
 
-computador= random.randint(0,5)
+computador= random.randint(0,5)     
+"""faz o computador pensar em um numero de 0 a 5"""
 
 usuario=int(input('adivinhe o numero  do computador de 0 a 5 : '))
 
