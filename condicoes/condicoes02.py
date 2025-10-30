@@ -6,7 +6,7 @@ media=(nota1+nota2+nota3)/3
 
 print(media)
 
-if media >= 9 :
+if media >= 10 :
     print('Parabens! , voce passou de classe ')
 else:
     print('Desculpa! , nao passou de classe')
