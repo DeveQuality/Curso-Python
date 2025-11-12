@@ -1,26 +1,49 @@
-""" import random
-
-jogo=int(input('Quer Jogar comigo? Escolha : 0-Pedra  1-Papel  2-Tesoura :  '))
-
-lista=['pedra','papel','tesoura']
-
-escolha=random.randint(0,2)
-
-if lista[jogo == escolha]:
-    print('{} .Empate'.format(escolha))
-elif lista[escolha==1]:
-    print('{} .Empate'.format(escolha))
-
-print(escolha) """
-
 import random
 
-escolha=random.randint(1,3)
+print("🎮 Jogo: Pedra, Papel ou Tesoura")
 
-pedra=1
-papel=2
-tessoura=3
+# Entrada do jogador
+jogador = input("Escolha (pedra, papel ou tesoura): ").lower()
 
+# Geração aleatória para o computador
+numero = random.randint(1, 3)
 
-print(papel)
-print(escolha)
+if numero == 1:
+    computador = "pedra"
+elif numero == 2:
+    computador = "papel"
+elif numero == 3:
+    computador = "tesoura"
+
+print("O computador escolheu:", computador)
+
+# Verificação das jogadas
+if jogador == computador:
+    print("🤝 Empate!")
+
+elif jogador == "pedra":
+    if computador == "tesoura":
+        print("✅ Você ganhou!")
+    elif computador == "papel":
+        print("💻 O computador ganhou!")
+    else:
+        print("❌ Escolha inválida.")
+
+elif jogador == "papel":
+    if computador == "pedra":
+        print("✅ Você ganhou!")
+    elif computador == "tesoura":
+        print("💻 O computador ganhou!")
+    else:
+        print("❌ Escolha inválida.")
+
+elif jogador == "tesoura":
+    if computador == "papel":
+        print("✅ Você ganhou!")
+    elif computador == "pedra":
+        print("💻 O computador ganhou!")
+    else:
+        print("❌ Escolha inválida.")
+
+else:
+    print("❌ Escolha inválida! Digite pedra, papel ou tesoura.")

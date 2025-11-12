@@ -35,6 +35,3 @@ elif Pagamento == 4 :
     
 else:
     print('Desculpe! Opcao invalida de pagamento.')
-
-
-
